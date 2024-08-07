@@ -1,14 +1,16 @@
 'use client'
 import Image from "next/image";
 import favicon from "../../app/favicon.ico";
-import { useSession, signIn } from 'next-auth/react';
+import { signIn } from 'next-auth/react';
 
 const Intro: React.FC = () => {
-  const { data: session } = useSession();
 
-  const handleSignIn = () => {
-    signIn('google');
-
+  const handleSignIn = async () => {
+    try {
+      await signIn('google');
+    } catch (error) {
+      console.error('Error signing in', error);
+    }
   };
 
   return (
