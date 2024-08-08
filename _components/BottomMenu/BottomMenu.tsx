@@ -7,7 +7,7 @@ const BottomMenu: React.FC = () => {
       <ul className="flex gap-8">
         <li>
           <Link href="/about" className="text-green-600 hover:text-green-700">
-            About
+            About Us
           </Link>
         </li>
         <li>
