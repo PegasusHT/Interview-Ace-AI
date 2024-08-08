@@ -29,11 +29,9 @@ const UserSchema = new Schema<UserDocument>({
         type: String,
         required: [true, "Name is required"]
     }
-    },
-    {
-        timestamps: true,
-    }
-);
+}, {
+    timestamps: true,
+});
 
 const  User  =  mongoose.models?.User  ||  model<UserDocument>('User', UserSchema);
 export  default  User;
