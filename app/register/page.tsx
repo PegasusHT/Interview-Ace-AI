@@ -37,7 +37,7 @@ export default function Register() {
          className="p-6 w-full max-w-[400px] flex flex-col justify-between items-center gap-2 
          border border-solid border-black bg-white rounded">
             <h1 className="mb-5 text-center w-full text-2xl font-bold">Register</h1>
-            <button
+            <button type='button'
              className="border w-full mb-4 border-black bg-white p-2 rounded-lg hover:bg-gray-100"
              onClick={handleGoogleSignIn}>
                 Register with Google
