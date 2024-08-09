@@ -36,4 +36,4 @@ const MessageSchema = new Schema<MessageDocument>({
     timestamps: true,
 });
 
-const  Message  =  mongoose.models?.Message  ||  model<MessageDocument>('Message', MessageSchema);
+export const  Message  =  mongoose.models?.Message  ||  model<MessageDocument>('Message', MessageSchema);
